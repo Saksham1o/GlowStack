@@ -67,3 +67,43 @@ function toggleFAQ(element) {
   
   
 
+  const modeToggle = document.getElementById('mode-toggle');
+  const modeLabel = document.getElementById('mode-label');
+  const logoImg = document.getElementById('logo');
+  const userIcon = document.getElementById('user-icon');
+  const tagLine = document.querySelectorAll('.tagline');
+  const service = document.getElementById('service');
+  const pricetext = document.getElementById('price-cont');
+  const faq = document.getElementById('faq-text');
+  const h3 = document.getElementsByClassName('serveh3');
+  
+  modeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+  
+    if (document.body.classList.contains('dark-mode')) {
+      console.log('Dark mode activated');
+      modeLabel.textContent = 'Dark Mode';
+      userIcon.src = 'img/user-dark.png';
+      logoImg.src = 'img/log-dark.png';
+      logoImg.style.height = '150px'; 
+      logoImg.style.top = '0'; 
+      logoImg.style.left = '0';
+      tagLine.forEach(element => {
+          element.style.color = '#fff';
+        });
+        service.style.setProperty('color', '#00ABE4', 'important'); 
+        pricetext.style.color = '#00ABE4';
+        toggleLabel.style.color = '#3B82F6';
+        faq.style.color = '#00ABE4';
+    } else {
+      console.log('Light mode activated');
+      modeLabel.textContent = 'Light Mode';
+      userIcon.src = 'img/user.png';
+      logoImg.src = 'img/logo.png';
+      logoImg.style.height = '100px'; 
+      logoImg.style.position = 'absolute'; 
+      logoImg.style.top = '10px'; 
+      logoImg.style.left = '10px'; 
+    }
+  });
+  
