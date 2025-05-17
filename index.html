@@ -22,8 +22,8 @@
       <div class="menu-item">
           <img src="img/user.png" alt="">
           <div class="sub-menu">
-              <a href="#">Login</a>
-              <a href="#">SignUp</a>
+            <a href="signinup.html?mode=signin">SignIn</a>
+            <a href="signinup.html?mode=signup">SignUp</a>
           </div>
       </div>
   </div>
@@ -41,7 +41,7 @@
       <a href="#services" class="underline">Services</a>
       <a href="#pricing-section" class="underline">Pricing</a>
       <a href="#faq" class="underline">FAQ's</a>
-      <a href="" class="underline">Contact</a>
+      <a href="#contact" class="underline">Contact</a>
     </div>
   </header>
 
@@ -140,6 +140,13 @@
 
     <section class="pricing-section" id="pricing-section">
       <h2 class="pricing-title">Choose the Plan That Fits Your Needs</h2>
+      <div class="toggle-container">
+        <label class="toggle-switch">
+            <input type="checkbox" id="pricing-toggle" />
+            <span class="slider"></span>
+        </label>
+        <span id="toggle-label">Monthly</span>
+    </div>
       <p class="pricing-subtitle">
         Whether you're just starting out or scaling your business, we have a pricing plan that suits your goals and
         budget.
@@ -147,7 +154,7 @@
       <div class="pricing-container">
         <div class="price-card">
           <p class="phead">Basic</p>
-          <p><span>$9</span>/mo</p>
+          <p class="pmo"><span>$9</span>/mo</p>
           <div class="feature">
             <ul class="feature-list">
               <li>10 Projects</li>
@@ -161,7 +168,7 @@
         <div class="price-card">
           <span class="popular-badge">Most Popular</span>
           <p class="phead">Pro</p>
-          <p><span>$29</span>/mo</p>
+          <p class="pmo"><span>$29</span>/mo</p>
           <div class="feature">
             <ul class="feature-list">
               <li>Unlimited Projects</li>
@@ -174,7 +181,7 @@
         </div>
         <div class="price-card">
           <p class="phead">Enterprise</p>
-          <p><span>$99</span>/mo</p>
+          <p class="pmo"><span>$99</span>/mo</p>
           <div class="feature">
             <ul class="feature-list">
               <li>Unlimited Projects</li>

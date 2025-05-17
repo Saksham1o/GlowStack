@@ -229,7 +229,6 @@ body {
   align-items: center;
   position: relative;
   margin-bottom: 8rem;
-  /* height: 600px; */
 }
 
 .price-card {
@@ -273,7 +272,6 @@ body {
 }
 
 
-/* Get Started Button */
 .price-card button {
   background: linear-gradient(to right, #a855f7, #3b82f6);
   color: #fff;
@@ -292,7 +290,6 @@ body {
   background: linear-gradient(to right, #9333ea, #2563eb);
 }
 
-/* Optional: Add spacing between list items */
 .feature ul li {
   list-style: none;
   margin-bottom: 10px;
@@ -332,13 +329,13 @@ body {
 
 footer {
   background-color: #101d3b;
-  padding: 50px 0; /* Changed from height to padding for responsiveness */
+  padding: 50px 0; 
 }
 
 .contact-container {
   display: flex;
-  justify-content: space-between; /* Changed to space-between for better alignment */
-  align-items: flex-start; /* Changed alignment to start */
+  justify-content: space-between; 
+  align-items: flex-start;
   max-width: 1200px;
   margin: auto;
   color: #fff;
@@ -447,4 +444,64 @@ input:focus, textarea:focus {
 
 .menu-item:hover .sub-menu {
   height: 90px;
+}
+
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI';
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s ease;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#toggle-label {
+  font-size: 1.2rem;
+  color: #021454;
 }
