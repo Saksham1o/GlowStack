@@ -27,8 +27,9 @@ To run this project locally, follow these steps:
    git clone https://github.com/yourusername/glowstack-pricing-cards.git
 
 2. Navigate to the project directory:
+   ```bash
    cd glowstack-pricing-cards
-   Open the index.html file in your web browser.
+Open the index.html file in your web browser.
 
 ## Usage
 1. Navigate through the application using the header links.
