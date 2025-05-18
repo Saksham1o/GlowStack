@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (logoImg) logoImg.src = 'img/logo.png';
     if (userIcon) userIcon.src = 'img/user.png';
-    logoImg.style.height = '100px';
+    logoImg.style.height = '120px';
     logoImg.style.position = 'absolute';
     logoImg.style.top = '10px';
     logoImg.style.left = '10px';
