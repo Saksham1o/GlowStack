@@ -17,7 +17,6 @@ GlowStack is a modern web application designed to showcase various services and 
 - JavaScript
 - Tailwind CSS
 - AOS (Animate On Scroll)
-- Locomotive Scroll
 
 ## Installation
 To run this project locally, follow these steps:
