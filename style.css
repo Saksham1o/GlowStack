@@ -586,6 +586,7 @@ body {
   position: absolute;
   right: 180px;
   top: 58px;
+  z-index: 999;
 }
 
 .mode-switch {
