@@ -489,11 +489,12 @@ p {
   z-index: 10000;
 }
 
+
 .sub-menu a:hover {
   margin-top: 10px;
   background-color: #fff;
-  color: #033aff;
-  width: 70%; 
+  color: #021454;
+  width: 70%;
 }
 
 body:not(.dark-mode) .sub-menu a:hover {
@@ -505,7 +506,7 @@ body:not(.dark-mode) .sub-menu a:hover {
   text-decoration: none;
   display: block;
   padding: 8px 16px;
-  color: #021454;
+  color: #2756ff;
   transition: background 0.2s, color 0.2s;
 }
 
