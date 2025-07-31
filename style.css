@@ -72,6 +72,8 @@ body {
   font-weight: 500;
   margin-top: 45px;
   margin-bottom: 80px;
+  pointer-events: none;
+  display: inline-block;
 }
 
 #upper-text,
@@ -462,6 +464,7 @@ p {
   top: 45px;
   right: 65px;
   transition: height 0.3s ease-in-out;
+  z-index: 9999;
 }
 
 .menu-item {
@@ -473,9 +476,13 @@ p {
 
 .sub-menu {
   font-size: 19px;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sub-menu.open {
+  max-height: 90px;
 }
 
 .sub-menu a:hover {
@@ -734,7 +741,7 @@ body,
     font-size: 2rem;
   }
   .pricing-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .contact-container {
@@ -744,6 +751,27 @@ body,
 
   .contact-right {
     width: 100%;
+  }
+
+  .menu {
+    right: 20px;
+    width: 60px;
+  }
+
+  .menu-item {
+    font-size: 24px;
+  }
+
+  .sub-menu a {
+    font-size: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
   }
 
 }
