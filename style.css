@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -696,3 +697,56 @@ body,
   visibility: visible;
 }
 
+
+@media screen and (max-width: 400px) {
+  .logo img {
+    left: 5px;
+    height: 80px;
+  }
+
+  .menu {
+    right: 10px;
+    top: 40px;
+    height: 30px;
+    width: 50px;
+  }
+
+  .mode-toggle {
+    display: none;
+  }
+
+  #part2 h1 {
+    font-size: 2.5rem;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+
+  #upper-text,
+  #lower-text {
+    font-size: 2.5rem;
+  }
+
+  #services h2 {
+    font-size: 2.7rem;
+  }
+
+  .pricing-title {
+    font-size: 2rem;
+  }
+  .pricing-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+}
