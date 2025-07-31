@@ -136,16 +136,3 @@ scrollToTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
-
-const userIcon = document.getElementById("user-icon");
-  const submenu = document.getElementById("sub-menu");
-
-  userIcon.addEventListener("click", function (e) {
-    e.stopPropagation(); // prevent click from bubbling up
-    submenu.classList.toggle("open");
-  });
-
-  // Optional: Close submenu if user taps anywhere else
-  document.addEventListener("click", function () {
-    submenu.classList.remove("open");
-  });
